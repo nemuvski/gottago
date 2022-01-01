@@ -1,0 +1,24 @@
+services:
+  workspace:
+    container_name: workspace
+    build: ./
+    image: gottago/workspace:1.17
+    volumes:
+      - ./workspace:/go/src/workspace:rw
+      - go_bin:/go/bin
+      - go_pkg:/go/pkg
+      - vscode_server:/root/.vscode-server
+    tty: true
+    logging:
+      driver: json-file
+      options:
+        max-size: '1m'
+        max-file: '1'
+
+volumes:
+  go_pkg:
+    driver: local
+  go_bin:
+    driver: local
+  vscode_server:
+    driver: local

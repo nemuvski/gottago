@@ -1,0 +1,22 @@
+{
+	"name": "gottago",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+	],
+	"service": "workspace",
+	"workspaceFolder": "/go/src/workspace",
+	"settings": {
+		"editor.formatOnSave": true,
+		"[go]": {
+			"editor.defaultFormatter": "golang.go"
+		},
+		"go.gopath": "/go",
+		"go.useLanguageServer": true,
+	},
+	"extensions": [
+		"ms-vscode.go",
+	],
+	"forwardPorts": [],
+	"runServices": [],
+	"shutdownAction": "none",
+}
