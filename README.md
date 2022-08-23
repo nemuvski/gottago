@@ -17,7 +17,7 @@ docker exec -it workspace /bin/sh
 
 ### If you use VSCode
 
-you can access to the container from VSCode via [Remote-Containers](https://code.visualstudio.com/docs/remote/containers) extension.
+You can access to the container from VSCode via [Remote-Containers](https://code.visualstudio.com/docs/remote/containers) extension.
 
 The dev container settings are described in `.devcontainer/devcontainer.json` file.
 
