@@ -2,7 +2,7 @@ services:
   workspace:
     container_name: workspace
     build: ./
-    image: gottago/workspace:1.17
+    image: gottago/workspace:1.20.6
     volumes:
       - ./workspace:/go/src/workspace:rw
       - go_bin:/go/bin
